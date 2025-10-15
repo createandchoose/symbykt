@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
-    <!-- PWA/Mini App: Обязательно добавляем viewport-fit=cover для использования всего экрана в Telegram и PWA. 
-         Это критично для корректного отображения на iPhone в "Safe Area" (зона под "челкой" и панелями). -->
+    <!-- PWA/Mini App: Обязательно добавляем viewport-fit=cover для использования всего экрана в Telegram и PWA -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <!-- PWA: Мета-тег для динамической установки цвета адресной строки/заголовка PWA. Скрипт ниже обновит его. -->
     <meta name="theme-color" content="#ffffff" id="pwa-theme-color" />
@@ -27,54 +26,38 @@
           
           const themeParams = WebApp.themeParams;
           
-          // 1. Определение цветов Telegram и адаптация Mini App
-          const isDark = WebApp.colorScheme === 'dark';
-          const bgColor = themeParams.bg_color || (isDark ? '#181818' : '#ffffff');
-          const secondaryBgColor = themeParams.secondary_bg_color || (isDark ? '#202020' : '#f0f0f0');
+          // Определяем цвета, которые Telegram использует для своей темы
+          // Обычно secondary_bg_color используется для шапки/основных элементов
+          const bgColor = themeParams.bg_color || (WebApp.colorScheme === 'dark' ? '#181818' : '#ffffff');
+          const secondaryBgColor = themeParams.secondary_bg_color || (WebApp.colorScheme === 'dark' ? '#202020' : '#f0f0f0');
 
-          // Устанавливает цвет заголовка (меню) Mini App
+          // 1. Адаптация шапки (меню) Telegram Mini App: 
+          // Устанавливает цвет заголовка (меню) Mini App, что обеспечивает 
+          // его синхронизацию с черным или белым фоном.
           WebApp.setHeaderColor(secondaryBgColor);
-          // Устанавливает цвет фона всего Mini App
+          
+          // 2. Адаптация фона всего Mini App
           WebApp.setBackgroundColor(bgColor);
 
-          // 2. PWA: Обновляем мета-тег для цвета адресной строки браузера (для iOS/Android)
+          // 3. PWA: Обновляем мета-тег для цвета адресной строки браузера
           const pwaThemeColorMeta = document.getElementById('pwa-theme-color');
           if (pwaThemeColorMeta) {
+              // Используем secondaryBgColor для цвета темы PWA, чтобы он гармонировал с шапкой Mini App
               pwaThemeColorMeta.setAttribute('content', secondaryBgColor);
           }
 
-          // 3. Синхронизация CSS классов с вашей логикой Vue
-          const themeElementsSelector = '.text, .text-2, .text-3, .text-4, .frame-447';
-          
-          if (isDark) {
-            // Если тема темная, применяем класс 'dark' к <html> и целевым элементам
-            document.documentElement.classList.add('dark');
-            const elementsToTheme = document.querySelectorAll(themeElementsSelector);
-            elementsToTheme.forEach(el => el.classList.add('dark'));
-            
-            // Опционально: Обновляем localStorage, чтобы Vue не переключал тему обратно при старте
-            localStorage.setItem('theme', 'dark');
-
-          } else {
-            // Если тема светлая, убеждаемся, что класс 'dark' удален
-            document.documentElement.classList.remove('dark');
-            const elementsToTheme = document.querySelectorAll(themeElementsSelector);
-            elementsToTheme.forEach(el => el.classList.remove('dark'));
-            
-            // Опционально: Обновляем localStorage
-            localStorage.setItem('theme', 'light');
-          }
-
-
-          // 4. Передаем переменные темы в CSS для использования в Vue
+          // 4. Передаем переменные темы в CSS для использования в Vue (опционально, но рекомендуется)
           document.documentElement.style.setProperty('--tg-bg-color', bgColor);
           document.documentElement.style.setProperty('--tg-secondary-bg-color', secondaryBgColor);
           document.documentElement.style.setProperty('--tg-text-color', themeParams.text_color || '#000000');
           document.documentElement.style.setProperty('--tg-hint-color', themeParams.hint_color || '#aaaaaa');
 
+          // В вашем Vue-приложении вы можете использовать эти переменные CSS:
+          // background-color: var(--tg-bg-color);
+          
         } else {
+          // Выполняется, если открыто не в Telegram, можно задать тему по умолчанию
           console.warn("Telegram WebApp не инициализирован. Используется тема по умолчанию.");
-          // Здесь можно добавить логику для установки темы по умолчанию, если localStorage пуст
         }
       }
 
