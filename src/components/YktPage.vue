@@ -24,11 +24,11 @@
       </div>
 
       <!-- Spline -->
-      <div class="frame-2169">
-        <div class="spline-scene" data-w-id="ea36d5b5-8da0-9cb6-5964-e078be628576" data-animation-type="spline" data-spline-url="https://prod.spline.design/zDNO0wiUJPtWnFL8/scene.splinecode">
-          <canvas></canvas>
-        </div>
-      </div>
+             <div class="frame-2169">
+            <div class="spline-scene" data-w-id="ea36d5b5-8da0-9cb6-5964-e078be628576" data-animation-type="spline" data-spline-url="https://prod.spline.design/zDNO0wiUJPtWnFL8/scene.splinecode">
+               <canvas></canvas>
+            </div>
+         </div>
 
       <!-- Description -->
       <div class="frame-2177">
@@ -90,80 +90,80 @@
         </div>
       </div>
 
-      <div :class="['text', { dark: isDark }]">Другие модели</div>
+          <div :class="['text', { dark: isDark }]">Другие модели</div>
 
-      <div class="frame-1511830635">
-        <div class="frame-1511830636">
-          <div class="frame-1511830637">
-            <a href="#" target="_blank" class="button-style-2 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
-            <div class="text-14">Белый медведь</div>
-          </div>
-          <div class="frame-1511830638">
-            <div class="frame-1511830639">
-              <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
-              <div class="frame-1511830641">
-                <div class="text-15">Перейти к модели</div>
-              </div>
+          <div class="frame-1511830635">
+            <div class="frame-1511830636">
+               <div class="frame-1511830637">
+                  <a href="#" target="_blank" class="button-style-2 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
+                  <div class="text-14">Белый медведь</div>
+               </div>
+               <div class="frame-1511830638">
+                  <div class="frame-1511830639">
+                     <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
+                     <div class="frame-1511830641">
+                        <div class="text-15">Перейти к модели</div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="frame-1511830642">
-          <div class="frame-1511830637">
-            <a href="#" target="_blank" class="button-style-3 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
-            <div class="text-14">Стерх</div>
-          </div>
-          <div class="frame-1511830638">
-            <div class="frame-1511830639">
-              <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
-              <div class="frame-1511830641">
-                <div class="text-15">Перейти к модели</div>
-              </div>
+            <div class="frame-1511830642">
+               <div class="frame-1511830637">
+                  <a href="#" target="_blank" class="button-style-3 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
+                  <div class="text-14">Стерх</div>
+               </div>
+               <div class="frame-1511830638">
+                  <div class="frame-1511830639">
+                     <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
+                     <div class="frame-1511830641">
+                        <div class="text-15">Перейти к модели</div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="frame-1511830643">
-          <div class="frame-1511830637">
-            <a href="#" target="_blank" class="button-style-4 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
-            <div class="text-14">Трилобит</div>
-          </div>
-          <div class="frame-1511830638">
-            <div class="frame-1511830639">
-              <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
-              <div class="frame-1511830641">
-                <div class="text-15">Перейти к модели</div>
-              </div>
+            <div class="frame-1511830643">
+               <div class="frame-1511830637">
+                  <a href="#" target="_blank" class="button-style-4 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
+                  <div class="text-14">Трилобит</div>
+               </div>
+               <div class="frame-1511830638">
+                  <div class="frame-1511830639">
+                     <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
+                     <div class="frame-1511830641">
+                        <div class="text-15">Перейти к модели</div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="frame-1511830644">
-          <div class="frame-1511830637">
-            <a href="#" target="_blank" class="button-style-4 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
-            <div class="text-14">Ленские столбы</div>
-          </div>
-          <div class="frame-1511830638">
-            <div class="frame-1511830639">
-              <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
-              <div class="frame-1511830641">
-                <div class="text-15">Перейти к модели</div>
-              </div>
+            <div class="frame-1511830644">
+               <div class="frame-1511830637">
+                  <a href="#" target="_blank" class="button-style-4 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
+                  <div class="text-14">Ленские столбы</div>
+               </div>
+               <div class="frame-1511830638">
+                  <div class="frame-1511830639">
+                     <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
+                     <div class="frame-1511830641">
+                        <div class="text-15">Перейти к модели</div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="frame-1511830645">
-          <div class="frame-1511830637">
-            <a href="#" target="_blank" class="button-style-4 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
-            <div class="text-14">Подставка</div>
-          </div>
-          <div class="frame-1511830638">
-            <div class="frame-1511830639">
-              <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
-              <div class="frame-1511830641">
-                <div class="text-15">Перейти к модели</div>
-              </div>
+            <div class="frame-1511830645">
+               <div class="frame-1511830637">
+                  <a href="#" target="_blank" class="button-style-4 icon"><img :src="desh" loading="lazy" width="12" height="12" alt="" class="vector"></a>
+                  <div class="text-14">Подставка</div>
+               </div>
+               <div class="frame-1511830638">
+                  <div class="frame-1511830639">
+                     <img :src="zag" loading="lazy" width="214" height="214" alt="" class="frame-1511830640">
+                     <div class="frame-1511830641">
+                        <div class="text-15">Перейти к модели</div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
+         </div>
 
       <!-- Footer -->
       <div class="frame-1511830570">
@@ -177,20 +177,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted } from 'vue'
 
 // Тема
 const isDark = ref(false)
-
-// Telegram Mini Apps API
-const tg = window.Telegram?.WebApp;
 
 function toggleTheme() {
   isDark.value = !isDark.value
   document.documentElement.classList.toggle('dark', isDark.value)
   localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
   updateThemeClasses()
-  updateTelegramHeaderColor()
 }
 
 function updateThemeClasses() {
@@ -202,14 +198,6 @@ function updateThemeClasses() {
       el.classList.remove('dark')
     }
   })
-}
-
-function updateTelegramHeaderColor() {
-  if (tg) {
-    const color = isDark.value ? '#0d0d0d' : '#ffffff'
-    tg.setHeaderColor(color)
-    tg.backgroundColor = color
-  }
 }
 
 // Image paths
@@ -233,16 +221,6 @@ onMounted(() => {
     isDark.value = true
     document.documentElement.classList.add('dark')
     updateThemeClasses()
-  }
-
-  // Инициализация Telegram Mini Apps
-  if (tg) {
-    tg.expand()
-    tg.enableClosingConfirmation()
-    updateTelegramHeaderColor()
-    
-    // Слушаем изменения темы в Telegram
-    tg.onEvent('themeChanged', updateTelegramHeaderColor)
   }
 
   // Инициализация Webflow и Spline
@@ -271,62 +249,17 @@ function initSpline() {
   }
 }
 </script>
-
 <style scoped>
-/* Основные стили для PWA и Telegram Mini Apps */
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
 .body {
   background: #ffffff;
   color: #111;
   transition: background 0.4s ease, color 0.4s ease;
   min-height: 100vh;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .body.dark {
   background: #0d0d0d;
   color: #ffffff;
-}
-
-.container {
-  max-width: 100%;
-  padding: 16px;
-  margin: 0 auto;
-}
-
-/* Улучшенный скролл для мобильных устройств */
-.frame-1511830635 {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
-
-.frame-1511830635::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
-}
-
-.frame-1511830636,
-.frame-1511830642,
-.frame-1511830643,
-.frame-1511830644,
-.frame-1511830645 {
-  flex: 0 0 auto;
-  width: 280px;
 }
 
 .frame-447 {
@@ -359,17 +292,6 @@ a {
   cursor: pointer;
 }
 
-/* Адаптивные изображения */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Улучшенные кнопки для мобильных устройств */
-.frame-65 {
-  touch-action: manipulation;
-}
-
 /* Добавляем более специфичные стили для темной темы */
 :deep(.text.dark),
 :deep(.text-2.dark),
@@ -385,23 +307,5 @@ img {
 
 :deep(.frame-447.dark) {
   background-color: rgba(255, 255, 255, 0.08) !important;
-}
-
-/* Стили для PWA */
-@media (display-mode: standalone) {
-  .body {
-    padding-top: env(safe-area-inset-top);
-  }
-}
-
-/* Адаптивность для различных размеров экрана */
-@media (max-width: 480px) {
-  .container {
-    padding: 12px;
-  }
-  
-  .frame-2169 {
-    height: 250px !important;
-  }
 }
 </style>
