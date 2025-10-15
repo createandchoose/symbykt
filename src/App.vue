@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import YktPage from './components/YktPage.vue'
+import YktPage from './views/1.vue'
 </script>
